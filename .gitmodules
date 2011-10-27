@@ -22,3 +22,6 @@
 [submodule "bundle/vim-session"]
 	path = bundle/vim-session
 	url = git://github.com/xolox/vim-session.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
