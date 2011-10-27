@@ -1,3 +1,15 @@
 [submodule "bundle/vim-twig"]
 	path = bundle/vim-twig
 	url = git://github.com/beyondwords/vim-twig.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = git://github.com/mileszs/ack.vim.git
+[submodule "bundle/indent-guides"]
+	path = bundle/indent-guides
+	url = git://github.com/vim-scripts/Indent-Guides.git
+[submodule "bundle/extradite"]
+	path = bundle/extradite
+	url = git://github.com/int3/vim-extradite.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
