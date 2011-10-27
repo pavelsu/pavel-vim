@@ -1,0 +1,3 @@
+[submodule "bundle/vim-twig"]
+	path = bundle/vim-twig
+	url = git://github.com/beyondwords/vim-twig.git
