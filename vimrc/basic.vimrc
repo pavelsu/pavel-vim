@@ -181,8 +181,9 @@ let g:SuperTabContextDefaultCompletionType="<c-x><c-n>"
 "au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 au CursorMovedI,InsertLeave * silent! pclose
 
-" jQuery
+" jQuery, twig
 au BufRead,BufNewFile *.js set ft=javascript syntax=jquery
+au BufRead,BufNewFile *.twig set syntax=htmltwig
 
 " Автоматические сохранять сесси
 let g:session_autosave="yes"
