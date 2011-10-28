@@ -172,7 +172,9 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-n>"
 let g:SuperTabContextDefaultCompletionType="<c-x><c-n>"
 
 " Сортировка css свойств
-" noremap <silent><leader>ss <esc>vi{:!sort<cr>:echo "Свойства css отсортированы!"<cr>
+nmap <c-o> :g#\({\n\)\@<=#.,/}/sort<cr>
+vmap <c-o> <esc>:g#\({\n\)\@<=#.,/}/sort<cr>w
+imap <c-o> <esc>:g#\({\n\)\@<=#.,/}/sort<cr>i
 
 " С-q - выход из Vim
 map <C-Q> <Esc>:qa<cr>
