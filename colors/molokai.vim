@@ -210,6 +210,6 @@ if &t_Co > 255
    hi NonText         ctermfg=250 ctermbg=234
 end
 
-hi ColorColumn guibg=#2d2d2d ctermbg=246
+hi ColorColumn guibg=#2d2d2d ctermbg=234
 hi CursorLine cterm=NONE,underline gui=NONE,underline ctermbg=NONE guibg=NONE
 "hi! link CursorColumn CursorLine
