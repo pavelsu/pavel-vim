@@ -50,7 +50,8 @@ set fileencoding=utf-8
 set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
 
 " Линия по 80 символу
-set colorcolumn=81
+autocmd BufEnter,BufWritePost ?* setlocal colorcolumn=81
+"set colorcolumn=81
 
 " Заставляем BackSpace работать как x, т.е. удалять предыдущий символ
 set backspace=indent,eol,start whichwrap+=<,>,[,]
@@ -144,10 +145,10 @@ set fo+=cr
 
 " Подсветка: пробелов в перемешку с табами, табов и пробелов
 " в конце строки, пробела с между табами
-highlight ExtraWhitespace ctermbg=red guibg=red
-autocmd FileType ?* syn match ExtraWhitespace /\s\+$/ containedin=ALL
-autocmd FileType ?* syn match ExtraWhitespace /\v\t+[ ]+/ containedin=ALL
-autocmd FileType ?* syn match ExtraWhitespace /\v[ ]+\t+/ containedin=ALL
+highlight ExtraWhitespace ctermbg=166 guibg=#d75f00
+autocmd BufEnter,BufWritePost ?* syn match ExtraWhitespace /\s\+$/ containedin=ALL
+autocmd BufEnter,BufWritePost ?* syn match ExtraWhitespace /\v\t+[ ]+/ containedin=ALL
+autocmd BufEnter,BufWritePost ?* syn match ExtraWhitespace /\v[ ]+\t+/ containedin=ALL
 
 " Сортировка css свойств
 " noremap <silent><leader>ss <esc>vi{:!sort<cr>:echo "Свойства css отсортированы!"<cr>

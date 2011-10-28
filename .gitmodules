@@ -34,3 +34,6 @@
 [submodule "bundle/vim-shell"]
 	path = bundle/vim-shell
 	url = git://github.com/vim-scripts/Shell.vim.git
+[submodule "bundle/vim-sparkup"]
+	path = bundle/vim-sparkup
+	url = git://github.com/sjl/vim-sparkup.git

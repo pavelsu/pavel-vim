@@ -40,6 +40,9 @@ nmap <F4> :call Vim_msg_toogle()<cr>
 vmap <F4> <esc>:call Vim_msg_toogle()<cr>
 imap <F4> <esc>:call Vim_msg_toogle()<cr>
 
+" Не переходить по энтеру на окно редактора
+au BufWinEnter quickfix nmap <buffer> <cr> <cr><esc>:wincmd b<cr>
+
 " F5 - просмотр списка буферов
 nmap <F5> <Esc>:BufExplorer<cr>
 vmap <F5> <esc>:BufExplorer<cr>
@@ -146,10 +149,6 @@ inoremap <home> <esc>^i
 inoremap <s-home> <esc>0i
 nnoremap <home> ^
 nnoremap <s-home> 0
-
-" По нажатию Enter переводить строку в визуальном режиме
-nmap <cr> O<down><esc>
-nmap <s-cr> O<down><esc>
 
 " phpDoc
 source ~/.vim/vimrc/php-doc.vim
