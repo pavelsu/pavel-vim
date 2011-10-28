@@ -161,6 +161,19 @@ nmap <c-i> :w<cr>
 vmap <c-i> <esc>:w<cr>v
 imap <c-i> <esc>:w<cr>i
 
+" Развертывание html
+let g:sparkupExecuteMapping = '<c-d>'
+
+" Ctrl-пробел - автодоплнение
+imap <C-Space> <C-X><C-O>
+
+" Автодополнение по tab
+let g:SuperTabDefaultCompletionType = "<c-x><c-n>"
+let g:SuperTabContextDefaultCompletionType="<c-x><c-n>"
+
+" Сортировка css свойств
+" noremap <silent><leader>ss <esc>vi{:!sort<cr>:echo "Свойства css отсортированы!"<cr>
+
 " С-q - выход из Vim
 map <C-Q> <Esc>:qa<cr>
 

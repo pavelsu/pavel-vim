@@ -153,9 +153,6 @@ autocmd BufEnter,BufWritePost ?* syn match ExtraWhitespace /\s\+$/ containedin=A
 autocmd BufEnter,BufWritePost ?* syn match ExtraWhitespace /\v\t+[ ]+/ containedin=ALL
 autocmd BufEnter,BufWritePost ?* syn match ExtraWhitespace /\v[ ]+\t+/ containedin=ALL
 
-" Сортировка css свойств
-" noremap <silent><leader>ss <esc>vi{:!sort<cr>:echo "Свойства css отсортированы!"<cr>
-
 " Автоматическое открытие NERDTree
 let NERDTreeChDirMode=2
 
@@ -167,15 +164,8 @@ let g:indexer_indexerListFilename=$HOME."/.vim/indexer_files"
 let g:indexer_tagsDirname=$HOME."/.vim/tags"
 let g:indexer_ctagsCommandLineOptions="-h '.php' -R --totals=yes --tag-relative=yes --PHP-kinds=+cf --regex-PHP='/abstract class ([^ ]*)/\1/c/' --regex-PHP='/interface ([^ ]*)/\1/c/' --regex-PHP='/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/' --exclude='*cache*'"
 
-" Ctrl-пробел - автодоплнение
-imap <C-Space> <C-X><C-O>
-
 " Чтоб не хватал первый попавшийся
 set completeopt=longest,menuone,preview
-
-" Автодополнение по tab
-let g:SuperTabDefaultCompletionType = "<c-x><c-n>"
-let g:SuperTabContextDefaultCompletionType="<c-x><c-n>"
 
 " Автоматически открывать и закрывать окно предпросмотра
 "au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
@@ -190,6 +180,3 @@ let g:session_autosave="yes"
 
 " Ack for Debian / Ubuntu +  --ignore-case
 let g:ackprg="ack-grep -H --nocolor --nogroup --column  --ignore-case"
-
-" Автодополнение html
-let g:sparkupExecuteMapping = '<c-d>'
