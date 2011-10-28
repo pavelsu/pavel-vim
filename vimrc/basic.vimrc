@@ -189,3 +189,6 @@ let g:session_autosave="yes"
 
 " Ack for Debian / Ubuntu +  --ignore-case
 let g:ackprg="ack-grep -H --nocolor --nogroup --column  --ignore-case"
+
+" Автодополнение html
+let g:sparkupExecuteMapping = '<c-d>'
