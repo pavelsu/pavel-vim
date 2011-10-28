@@ -211,5 +211,5 @@ if &t_Co > 255
 end
 
 hi ColorColumn guibg=#2d2d2d ctermbg=246
-hi CursorLine cterm=NONE,underline gui=NONE,underline ctermbg=233 guibg=#1b1d1e
+hi CursorLine cterm=NONE,underline gui=NONE,underline ctermbg=NONE guibg=NONE
 "hi! link CursorColumn CursorLine
