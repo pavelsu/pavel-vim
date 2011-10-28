@@ -53,6 +53,9 @@ set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
 autocmd BufEnter,BufWritePost ?* setlocal colorcolumn=81
 "set colorcolumn=81
 
+" Подчеркивание
+autocmd BufEnter,BufWritePost ?* setlocal cul
+
 " Заставляем BackSpace работать как x, т.е. удалять предыдущий символ
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 
