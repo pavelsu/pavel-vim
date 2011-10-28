@@ -168,8 +168,8 @@ let g:sparkupExecuteMapping = '<c-d>'
 imap <C-Space> <C-X><C-O>
 
 " Автодополнение по tab
-let g:SuperTabDefaultCompletionType = "<c-x><c-n>"
-let g:SuperTabContextDefaultCompletionType="<c-x><c-n>"
+autocmd BufEnter,BufWritePost * let g:SuperTabDefaultCompletionType="<c-x><c-o>"
+autocmd BufEnter,BufWritePost *php let g:SuperTabDefaultCompletionType="<c-x><c-n>"
 
 " Сортировка css свойств
 nmap <c-o> :g#\({\n\)\@<=#.,/}/sort<cr>
