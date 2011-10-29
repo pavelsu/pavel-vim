@@ -153,7 +153,7 @@ autocmd BufEnter,BufWritePost ?* syn match ExtraWhitespace /\s\+$/ containedin=A
 autocmd BufEnter,BufWritePost ?* syn match ExtraWhitespace /\v\t+[ ]+/ containedin=ALL
 autocmd BufEnter,BufWritePost ?* syn match ExtraWhitespace /\v[ ]+\t+/ containedin=ALL
 
-" Автоматическое открытие NERDTree
+" NERDTree
 let NERDTreeChDirMode=2
 
 " Indexer
@@ -189,5 +189,5 @@ function! b:codepath_path()
         exe 'cd '.g:codepath.'/'.split(current_dir,'/')[len(split(g:codepath, "/"))]
     endif
 endfunction
-autocmd BufWinEnter * call b:codepath_path()
+autocmd BufWinEnter ?* call b:codepath_path()
 
