@@ -40,3 +40,6 @@
 [submodule "bundle/codepath.vim"]
 	path = bundle/codepath.vim
 	url = git://github.com/lucapette/codepath.vim.git
+[submodule "bundle/screen"]
+	path = bundle/screen
+	url = git://github.com/ervandew/screen.git

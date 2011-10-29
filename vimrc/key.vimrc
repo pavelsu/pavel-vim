@@ -173,7 +173,7 @@ autocmd BufEnter,BufWritePost *php let g:SuperTabDefaultCompletionType="<c-x><c-
 
 " Сортировка css свойств
 nmap <c-o> :g#\({\n\)\@<=#.,/}/sort<cr>
-vmap <c-o> <esc>:g#\({\n\)\@<=#.,/}/sort<cr>w
+vmap <c-o> <esc>:g#\({\n\)\@<=#.,/}/sort<cr>v
 imap <c-o> <esc>:g#\({\n\)\@<=#.,/}/sort<cr>i
 
 " С-q - выход из Vim
