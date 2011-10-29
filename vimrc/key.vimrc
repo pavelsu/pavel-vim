@@ -157,9 +157,9 @@ nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>v
 
 " Прорисовать табы
-nmap <c-i> :w<cr>
-vmap <c-i> <esc>:w<cr>v
-imap <c-i> <esc>:w<cr>i
+nmap <c-i> :IndentGuidesToggle<cr>
+vmap <c-i> <esc>:IndentGuidesToggle<cr>v
+imap <c-i> <esc>:IndentGuidesToggle<cr>i
 
 " Развертывание html
 let g:sparkupExecuteMapping = '<c-d>'
