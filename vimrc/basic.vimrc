@@ -180,3 +180,14 @@ let g:session_autosave="yes"
 
 " Ack for Debian / Ubuntu +  --ignore-case
 let g:ackprg="ack-grep -H --nocolor --nogroup --column  --ignore-case"
+
+" Автоматическая смера рабочей директории в проекте
+let g:codepath=$HOME.'/workspace'
+function! b:codepath_path()
+    let current_dir = expand("%:p:h")
+    if current_dir != g:codepath && match(current_dir, g:codepath) >= 0
+        exe 'cd '.g:codepath.'/'.split(current_dir,'/')[len(split(g:codepath, "/"))]
+    endif
+endfunction
+autocmd BufWinEnter * call b:codepath_path()
+

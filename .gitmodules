@@ -37,3 +37,6 @@
 [submodule "bundle/vim-sparkup"]
 	path = bundle/vim-sparkup
 	url = git://github.com/sjl/vim-sparkup.git
+[submodule "bundle/codepath.vim"]
+	path = bundle/codepath.vim
+	url = git://github.com/lucapette/codepath.vim.git
