@@ -89,6 +89,11 @@ map <F12> :exe 'NERDTreeToggle ' .g:workdir<cr>
 vmap <F12> <esc>:exe 'NERDTreeToggle'. g:workdir<cr>
 imap <F12> <esc>:exe 'NERDTreeToggle'. g:workdir<cr>
 
+" Gundo
+nmap <c-z> :GundoToggle<cr>
+vmap <c-z> <esc>:GundoToggle<cr>
+imap <c-z> <esc>:GundoToggle<cr>
+
 " < & > - делаем отступы для блоков
 vmap < <gv
 vmap > >gv
