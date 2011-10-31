@@ -192,7 +192,7 @@ endfunction
 autocmd BufWinEnter ?* call b:codepath_path()
 
 " MRU - последние редактируемыйе файлы
-let MRU_File = $VIMDIR.'/mru_histiry'
+let MRU_File = $VIMDIR.'/mru_history'
 let MRU_Max_Entries = 120
 let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
 
