@@ -191,3 +191,8 @@ function! b:codepath_path()
 endfunction
 autocmd BufWinEnter ?* call b:codepath_path()
 
+" MRU - последние редактируемыйе файлы
+let MRU_File = $VCFG.'/mru_histiry'
+let MRU_Max_Entries = 120
+let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
+
