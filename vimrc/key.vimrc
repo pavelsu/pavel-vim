@@ -151,7 +151,6 @@ nnoremap <home> ^
 nnoremap <s-home> 0
 
 " phpDoc
-source ~/.vim/vimrc/php-doc.vim
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>v
