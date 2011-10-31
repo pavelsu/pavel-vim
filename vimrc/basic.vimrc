@@ -136,7 +136,7 @@ set undolevels=2048
 
 " Сохранение undo после закрытия файла
 set undofile
-set undodir=$VCFG/undo/
+set undodir=$VIMDIR/undo/
 
 " Запомнить позицию курсора и фолдинг
 set viewoptions=cursor,folds
@@ -160,8 +160,8 @@ let NERDTreeChDirMode=2
 let g:indexer_disableCtagsWarning=1
 let g:indexer_lookForProjectDir=0
 let g:indexer_ctagsJustAppendTagsAtFileSave=1
-let g:indexer_indexerListFilename=$VCFG."/indexer_files"
-let g:indexer_tagsDirname=$VCFG."/tags"
+let g:indexer_indexerListFilename=$VIMDIR."/indexer_files"
+let g:indexer_tagsDirname=$VIMDIR."/tags"
 let g:indexer_ctagsCommandLineOptions="-h '.php' -R --totals=yes --tag-relative=yes --PHP-kinds=+cf --regex-PHP='/abstract class ([^ ]*)/\1/c/' --regex-PHP='/interface ([^ ]*)/\1/c/' --regex-PHP='/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/' --exclude='*cache*'"
 
 " Чтоб не хватал первый попавшийся
@@ -192,7 +192,7 @@ endfunction
 autocmd BufWinEnter ?* call b:codepath_path()
 
 " MRU - последние редактируемыйе файлы
-let MRU_File = $VCFG.'/mru_histiry'
+let MRU_File = $VIMDIR.'/mru_histiry'
 let MRU_Max_Entries = 120
 let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
 
