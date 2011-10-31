@@ -85,9 +85,9 @@ imap <F11> <esc>:TlistToggle<cr>
 let Tlist_Use_Right_Window = 1
 
 " F12 - обозреватель файлов
-map <F12> :exe 'NERDTreeToggle ' .g:workdir<cr>
-vmap <F12> <esc>:exe 'NERDTreeToggle'. g:workdir<cr>
-imap <F12> <esc>:exe 'NERDTreeToggle'. g:workdir<cr>
+map <F12> :exe 'NERDTreeToggle ' .$CURDIR<cr>
+vmap <F12> <esc>:exe 'NERDTreeToggle'. $CURDIR<cr>
+imap <F12> <esc>:exe 'NERDTreeToggle'. $CURDIR<cr>
 
 " Gundo
 nmap <c-z> :GundoToggle<cr>

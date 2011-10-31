@@ -1,6 +1,12 @@
 " Paths
 let $VIMDIR = $HOME.'/.vim'
-let g:workdir = $HOME.'/workspace'
+let $WORKDIR = $HOME.'/workspace'
+if has("gui_running")
+    let $CURDIR = $WORKDIR
+    exe 'cd '. $WORKDIR
+else
+    let $CURDIR = getcwd()
+endif
 
 " Pathogen
 filetype off
