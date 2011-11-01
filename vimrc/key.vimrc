@@ -16,8 +16,8 @@ set nospell
 syntax spell toplevel
 "map <F3> :set spell!<CR><bar>:echo "Spell check: " .strpart("OFFON", 3 * &spell, 3)<CR>
 map <F3> :set spell!<CR>
-imap <F3> :set spell!<CR>i
-vmap <F3> :set spell!<CR>v
+imap <F3> <esc>:set spell!<CR>i
+vmap <F3> <esc>:set spell!<CR>v
 
 " F2 - быстрое сохранение
 nmap <F2> :w<cr>
