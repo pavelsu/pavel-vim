@@ -165,6 +165,12 @@ nmap <c-i> :IndentGuidesToggle<cr>
 vmap <c-i> <esc>:IndentGuidesToggle<cr>v
 imap <c-i> <esc>:IndentGuidesToggle<cr>i
 
+
+" Удалить оконечне пробелы
+nmap <a-s> :%s/\s\+$//e<cr>
+vmap <a-s> <esc>:%s/\s\+$//e<cr>v
+imap <a-s> <esc>:%s/\s\+$//e<cr>i
+
 " Развертывание html
 let g:sparkupExecuteMapping = '<c-d>'
 
