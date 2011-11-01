@@ -94,6 +94,11 @@ nmap <c-z> :GundoToggle<cr>
 vmap <c-z> <esc>:GundoToggle<cr>
 imap <c-z> <esc>:GundoToggle<cr>
 
+" MRU
+nmap <a-z> :MRU<cr>
+vmap <a-z> <esc>:MRU<cr>
+imap <a-z> <esc>:MRU<cr>
+
 " < & > - делаем отступы для блоков
 vmap < <gv
 vmap > >gv
@@ -164,7 +169,6 @@ vnoremap <C-P> :call PhpDocRange()<CR>v
 nmap <c-i> :IndentGuidesToggle<cr>
 vmap <c-i> <esc>:IndentGuidesToggle<cr>v
 imap <c-i> <esc>:IndentGuidesToggle<cr>i
-
 
 " Удалить оконечне пробелы
 nmap <a-s> :%s/\s\+$//e<cr>
